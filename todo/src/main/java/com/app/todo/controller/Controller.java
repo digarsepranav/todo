@@ -17,7 +17,7 @@ public class Controller {
 
     // create a task : will be a string and have to get it from the user
     @PostMapping("/addTask")
-    public ResponseEntity<String> createTask(@RequestBody String s) {
+    public ResponseEntity<String> createTask(@@RequestBody String s) {
         service.addTask(s);
         return ResponseEntity.status(HttpStatus.CREATED).body("Task is created! ");
     }
